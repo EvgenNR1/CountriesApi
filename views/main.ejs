@@ -1,0 +1,19 @@
+<%- include('parts/head.ejs') %>
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST" class="mt-5">
+            <div class="input-group">
+                <select name="country" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <option value="estonia">Estonia</option>
+                    <option value="latvia">Latvia</option>
+                    <option value="lithuania">Lithuania</option>
+                </select>
+                <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit">Show County Data</input>
+                </div>
+            </div>
+        </form>
+    </div>
+    <%- include('parts/end.ejs') %>

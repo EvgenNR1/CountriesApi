@@ -1,0 +1,66 @@
+<%- include('parts/head.ejs') %>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="tile">
+                    <div class="wrapper">
+                        <div class="header"><%= countryName %></div>
+
+                        <div class="banner-img">
+                            <img src="<%= imageFlag %>" alt="flag">
+                        </div>
+
+                        <div class="dates">
+                            <div class="start">
+                                <strong>Language</strong> <%= language %>
+                                <span></span>
+                            </div>
+                            <div class="ends">
+                                <strong>Region</strong> <%= region %>
+                            </div>
+                        </div>
+
+                        <div class="stats">
+                            <div>
+                                <strong>Top Level Domain</strong> <%= domain %>
+                            </div>
+                            <div>
+                                <strong>Calling Code</strong> <%= calCode %> 
+                            </div>
+                            <div>
+                                <strong>Timezone</strong> <%= timezone %>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div>
+                                <strong>Currency code</strong> <%= currency[0].code %>
+                            </div>
+                            <div>
+                                <strong>Currency name</strong> <%= currency[0].name %>
+                            </div>
+                            <div>
+                                <strong>Currency symbol</strong> <%= currency[0].symbol %>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div>
+                                <strong>Capital</strong> <%= capital %>
+                            </div>
+                            <div>
+                                <strong>Subregion</strong> <%= subregion %>
+                            </div>
+                            <div>
+                                <strong>Population</strong> <%= population %>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('parts/end.ejs') %>
